@@ -1,0 +1,11 @@
+# C++ Project Git Ignore
+bin/
+build/
+*.exe
+*.o
+*.obj
+*.out
+.vscode/
+.vs/
+Debug/
+Release/
