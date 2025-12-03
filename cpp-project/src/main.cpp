@@ -11,6 +11,12 @@ int main() {
     std::cin >> name;
     std::cout << "Hello, " << name << "!" << std::endl;
     
-    return 0;
+    std::cout << "\n--- Mathematical calculation ---" << std::endl;
+    int a, b;
+    std::cout << "Please enter two integers (separated by a space): ";
+    std::cin >> a >> b;
+    
+    int sum = a + b;
+    std::cout << a << " + " << b << " = " << sum << std::endl;
     return 0;
 }
