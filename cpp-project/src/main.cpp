@@ -11,12 +11,15 @@ int main() {
     std::cin >> name;
     std::cout << "Hello, " << name << "!" << std::endl;
     
-    std::cout << "\n--- Mathematical calculation ---" << std::endl;
+    std::cout << "\n--- Mathematical Operations ---" << std::endl;
     int a, b;
     std::cout << "Please enter two integers (separated by a space): ";
     std::cin >> a >> b;
     
-    int sum = a + b;
-    std::cout << a << " + " << b << " = " << sum << std::endl;
+    // 增加乘法功能
+    std::cout << "\nCalculation Results:" << std::endl;
+    std::cout << a << " + " << b << " = " << (a + b) << std::endl;
+    std::cout << a << " * " << b << " = " << (a * b) << std::endl;
+    
     return 0;
 }
