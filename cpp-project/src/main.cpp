@@ -1,5 +1,6 @@
 #include <iostream>
 #include "../include/utils.h"
+#include<limits>
 
 int main() {
     std::cout << "=== C++ Project Demo ===" << std::endl;
@@ -18,5 +19,14 @@ int main() {
     
     int sum = a + b;
     std::cout << a << " + " << b << " = " << sum << std::endl;
+
+     if (!(std::cin >> a >> b)) {
+        std::cout << "Input error! Please enter a valid integer." << std::endl;
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    } else {
+        int sum = a + b;
+        std::cout << a << " + " << b << " = " << sum << std::endl;
+    }
     return 0;
 }
