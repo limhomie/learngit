@@ -1,2 +1,2 @@
-# 作者：limhomie
+# 2222
 print('Hello Git')
